@@ -21,7 +21,7 @@ export default function Contact() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/contact-bg.png"
+          src="/images/contact-bg.jpg"
           alt=""
           className="w-full h-full object-cover"
         />

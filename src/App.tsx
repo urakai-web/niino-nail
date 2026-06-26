@@ -17,8 +17,8 @@ export default function App() {
         <Concept />
         <Works />
         <Features />
-        <News />
         <Flow />
+        <News />
         <Contact />
       </main>
       <Footer />
