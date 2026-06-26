@@ -28,11 +28,12 @@ export default function Footer() {
           {/* Salon info */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <img
-                src="/images/logo.jpg"
-                alt="Niino - Private Nail Salon"
-                className="h-12 w-auto rounded"
-              />
+              <p className="text-white font-serif font-light text-xl tracking-widest">
+                Niino
+              </p>
+              <p className="text-gray-500 text-[10px] tracking-widest mt-1">
+                PRIVATE NAIL SALON
+              </p>
             </div>
             <address className="not-italic text-sm leading-8 space-y-1">
               <p>〒921-8064</p>
@@ -43,27 +44,6 @@ export default function Footer() {
               <p>ネイリスト：MISAKI</p>
             </div>
 
-            {/* SNS */}
-            <div className="flex gap-4 mt-6">
-              <a
-                href="https://www.instagram.com/niino__nail/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
-              >
-                IG
-              </a>
-              <a
-                href="https://line.me/R/ti/p/@jlj0089i"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LINE"
-                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
-              >
-                LINE
-              </a>
-            </div>
           </div>
 
           {/* Nav columns */}

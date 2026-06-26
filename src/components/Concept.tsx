@@ -27,7 +27,7 @@ export default function Concept() {
             <div className="relative">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/concept.png"
+                  src="/images/concept.jpg"
                   alt="ネイルサロン Niino"
                   className="w-full h-full object-cover"
                 />
@@ -46,10 +46,7 @@ export default function Concept() {
               全力でカタチに。
             </h2>
             <div className="space-y-5 text-gray-600 leading-relaxed text-sm">
-              <p>
-                Niinoは、石川県金沢市にあるプライベートネイルサロンです。ネイリストMISAKIがマンツーマンで丁寧に施術いたします。
-              </p>
-              <p>
+<p>
                 推しネイル・個性派・キャラネイル・トレンドデザインなど、シンプルなワンカラーから派手派手デザインまで、お客様の「好き」を何でも叶えます。
               </p>
               <p>
