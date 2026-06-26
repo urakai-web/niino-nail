@@ -1,0 +1,105 @@
+const footerNav = [
+  {
+    heading: "メニュー",
+    links: [
+      { label: "ハンドネイル", href: "#menu" },
+      { label: "フットネイル", href: "#menu" },
+      { label: "オプション", href: "#menu" },
+      { label: "オフ", href: "#menu" },
+    ],
+  },
+  {
+    heading: "サロン",
+    links: [
+      { label: "コンセプト", href: "#about" },
+      { label: "ギャラリー", href: "#gallery" },
+      { label: "サロン情報", href: "#info" },
+      { label: "ご予約", href: "#contact" },
+    ],
+  },
+];
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-gray-400">
+      {/* Main footer */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Salon info */}
+          <div className="lg:col-span-2">
+            <div className="mb-6">
+              <img
+                src="/images/logo.jpg"
+                alt="Niino - Private Nail Salon"
+                className="h-12 w-auto rounded"
+              />
+            </div>
+            <address className="not-italic text-sm leading-8 space-y-1">
+              <p>〒921-8064</p>
+              <p>石川県金沢市矢木3丁目242</p>
+            </address>
+            <div className="mt-4 text-xs space-y-1">
+              <p>完全予約制（LINEにてご予約）</p>
+              <p>ネイリスト：MISAKI</p>
+            </div>
+
+            {/* SNS */}
+            <div className="flex gap-4 mt-6">
+              <a
+                href="https://www.instagram.com/niino__nail/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
+              >
+                IG
+              </a>
+              <a
+                href="https://line.me/R/ti/p/@jlj0089i"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LINE"
+                className="w-8 h-8 border border-gray-700 flex items-center justify-center hover:border-white hover:text-white transition-colors text-sm"
+              >
+                LINE
+              </a>
+            </div>
+          </div>
+
+          {/* Nav columns */}
+          {footerNav.map((col) => (
+            <div key={col.heading}>
+              <h3 className="text-white text-xs tracking-widest uppercase mb-6 pb-3 border-b border-gray-700">
+                {col.heading}
+              </h3>
+              <ul className="space-y-3">
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-sm hover:text-white transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+          <p>© 2025 private salon Niino All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-gray-400 transition-colors">
+              プライバシーポリシー
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
