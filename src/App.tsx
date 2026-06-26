@@ -7,6 +7,7 @@ import News from "./components/News";
 import Flow from "./components/Flow";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ReserveButton from "./components/ReserveButton";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ReserveButton />
     </div>
   );
 }
