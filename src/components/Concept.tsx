@@ -52,15 +52,12 @@ export default function Concept() {
                 巻き爪・深爪のケアにも対応。爪のお悩みもお気軽にご相談ください。おひとりおひとりに寄り添った、あなただけのネイルをお届けします。
               </p>
             </div>
-            <a href="#menu" className="btn-outline mt-10 inline-block text-xs">
-              メニュー・料金を見る →
-            </a>
           </div>
         </div>
 
-        {/* Row 2: Text left, Image right (PC) / Text then Image (mobile) */}
-        <div className="grid md:grid-cols-2 gap-16 items-center mt-24">
-          <div className="fade-in-up md:order-1">
+        {/* Row 2: Sign Language */}
+        <div className="mt-24 fade-in-up">
+          <div className="max-w-lg mx-auto text-center">
             <p className="text-xs tracking-widest text-primary uppercase mb-3">
               Sign Language
             </p>
@@ -68,15 +65,7 @@ export default function Concept() {
               手話での対応も<br />
               できます。
             </h2>
-            <div className="space-y-5 text-gray-600 leading-relaxed text-sm">
-              <p>
-                聴覚に障害のある方も安心してお越しください。
-              </p>
-            </div>
-          </div>
-
-          <div className="fade-in-up md:order-2">
-            <div className="relative inline-block">
+            <div className="relative inline-block mb-8">
               <img
                 src="/images/sign-language.png"
                 alt="手話対応"
@@ -84,7 +73,16 @@ export default function Concept() {
               />
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-primary -z-10" />
             </div>
+            <p className="text-sm text-gray-600 leading-relaxed mt-4">
+              聴覚に障害のある方も安心してお越しください。
+            </p>
           </div>
+        </div>
+
+        <div className="text-center mt-16">
+          <a href="#menu" className="btn-outline inline-block text-xs">
+            メニュー・料金を見る →
+          </a>
         </div>
       </div>
     </section>
