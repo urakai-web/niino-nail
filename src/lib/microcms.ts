@@ -1,9 +1,11 @@
 import { createClient } from "microcms-js-sdk";
 
-export const client = createClient({
-  serviceDomain: import.meta.env.VITE_MICROCMS_SERVICE_DOMAIN,
-  apiKey: import.meta.env.VITE_MICROCMS_API_KEY,
-});
+const serviceDomain = import.meta.env.VITE_MICROCMS_SERVICE_DOMAIN || "";
+const apiKey = import.meta.env.VITE_MICROCMS_API_KEY || "";
+
+export const client = serviceDomain && apiKey
+  ? createClient({ serviceDomain, apiKey })
+  : null;
 
 export type Tag = {
   id: string;

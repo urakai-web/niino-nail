@@ -24,6 +24,10 @@ export default function Works() {
   }, []);
 
   useEffect(() => {
+    if (!client) {
+      setLoading(false);
+      return;
+    }
     Promise.all([
       client.getList<Tag>({ endpoint: "tags", queries: { limit: 50 } }),
       client.getList<GalleryItem>({ endpoint: "gallery", queries: { limit: 50 } }),
