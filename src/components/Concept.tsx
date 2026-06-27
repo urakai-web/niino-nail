@@ -60,7 +60,7 @@ export default function Concept() {
 
         {/* Row 2: Text left, Image right (PC) / Text then Image (mobile) */}
         <div className="grid md:grid-cols-2 gap-16 items-center mt-24">
-          <div className="fade-in-up order-2 md:order-1">
+          <div className="fade-in-up md:order-1">
             <p className="text-xs tracking-widest text-primary uppercase mb-3">
               Sign Language
             </p>
@@ -75,7 +75,7 @@ export default function Concept() {
             </div>
           </div>
 
-          <div className="fade-in-up order-1 md:order-2">
+          <div className="fade-in-up md:order-2">
             <div className="relative inline-block">
               <img
                 src="/images/sign-language.png"
