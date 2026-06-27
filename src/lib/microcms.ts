@@ -20,5 +20,10 @@ export type GalleryItem = {
     height: number;
   };
   description?: string;
-  tags: Tag[];
+  tags: Tag | Tag[];
 };
+
+export function getTags(item: GalleryItem): Tag[] {
+  if (!item.tags) return [];
+  return Array.isArray(item.tags) ? item.tags : [item.tags];
+}

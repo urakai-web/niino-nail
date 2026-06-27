@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { client, type Tag, type GalleryItem } from "../lib/microcms";
+import { client, type Tag, type GalleryItem, getTags } from "../lib/microcms";
 
 export default function Works() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -41,7 +41,7 @@ export default function Works() {
   }, []);
 
   const filtered = activeTag
-    ? items.filter((item) => item.tags.some((t) => t.id === activeTag))
+    ? items.filter((item) => getTags(item).some((t) => t.id === activeTag))
     : items;
 
   return (
@@ -121,7 +121,7 @@ export default function Works() {
                     </div>
                     <div className="p-4">
                       <div className="flex flex-wrap gap-1.5 mb-2">
-                        {item.tags.map((tag) => (
+                        {getTags(item).map((tag) => (
                           <span
                             key={tag.id}
                             className="text-[10px] tracking-wide bg-warm-100 text-accent px-2 py-0.5 rounded-full"
