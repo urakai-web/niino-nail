@@ -41,7 +41,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={`text-sm tracking-wide hover:text-primary transition-colors duration-300 ${
-                isScrolled ? "text-gray-700" : "text-white"
+                isScrolled ? "text-gray-700" : "text-gray-700"
               }`}
             >
               {item.label}
@@ -63,17 +63,17 @@ export default function Header() {
         >
           <span
             className={`block w-6 h-0.5 transition-all duration-300 ${
-              isScrolled ? "bg-gray-800" : "bg-white"
+              isScrolled ? "bg-gray-800" : "bg-gray-800"
             } ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
             className={`block w-6 h-0.5 transition-all duration-300 ${
-              isScrolled ? "bg-gray-800" : "bg-white"
+              isScrolled ? "bg-gray-800" : "bg-gray-800"
             } ${isMenuOpen ? "opacity-0" : ""}`}
           />
           <span
             className={`block w-6 h-0.5 transition-all duration-300 ${
-              isScrolled ? "bg-gray-800" : "bg-white"
+              isScrolled ? "bg-gray-800" : "bg-gray-800"
             } ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
