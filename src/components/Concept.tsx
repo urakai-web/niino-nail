@@ -63,7 +63,7 @@ export default function Concept() {
             </p>
             <h2 className="text-2xl md:text-3xl font-serif font-light leading-relaxed mb-8 text-gray-800">
               手話での対応も<br />
-              できます。
+              可能です。
             </h2>
             <div className="relative inline-block mb-8">
               <img
@@ -74,7 +74,7 @@ export default function Concept() {
               <div className="absolute -bottom-4 -left-4 w-full h-full border-2 border-primary -z-10" />
             </div>
             <p className="text-sm text-gray-600 leading-relaxed mt-4">
-              聴覚に障害のある方も安心してお越しください。
+              聴覚に障害のある方も、安心してご来店ください。
             </p>
           </div>
         </div>
