@@ -31,6 +31,8 @@ export default function Works() {
       setTags(tagsRes.contents);
       setItems(galleryRes.contents);
       setLoading(false);
+    }).catch(() => {
+      setLoading(false);
     });
   }, []);
 

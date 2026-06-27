@@ -1,8 +1,8 @@
 import { createClient } from "microcms-js-sdk";
 
 export const client = createClient({
-  serviceDomain: "6xa8e3o87j",
-  apiKey: "YbmkW8FIY1wKqqa4a6OG2Ekn4y9f3dIU82u4",
+  serviceDomain: import.meta.env.VITE_MICROCMS_SERVICE_DOMAIN,
+  apiKey: import.meta.env.VITE_MICROCMS_API_KEY,
 });
 
 export type Tag = {
