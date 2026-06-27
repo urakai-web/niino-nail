@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { client, type Tag, type GalleryItem, getTags } from "../lib/microcms";
+import { fetchList, type Tag, type GalleryItem, getTags } from "../lib/microcms";
 
 export default function Works() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -25,8 +25,8 @@ export default function Works() {
 
   useEffect(() => {
     Promise.all([
-      client.getList<Tag>({ endpoint: "tags", queries: { limit: 50 } }),
-      client.getList<GalleryItem>({ endpoint: "gallery", queries: { limit: 50 } }),
+      fetchList<Tag>("tags"),
+      fetchList<GalleryItem>("gallery"),
     ]).then(([tagsRes, galleryRes]) => {
       setTags(tagsRes.contents);
       setItems(galleryRes.contents);
