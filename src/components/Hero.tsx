@@ -9,6 +9,7 @@ export default function Hero() {
           filter: "blur(40px) brightness(1.1)",
         }}
       />
+      <h1 className="sr-only">Niino（ニーノ）｜石川県金沢市のプライベートネイルサロン</h1>
       <img
         src="/images/logo.jpg"
         alt="Niino - Private Nail Salon"

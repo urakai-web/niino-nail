@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://niino-nail.pages.dev/sitemap.xml
