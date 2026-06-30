@@ -71,7 +71,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-warm-200">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
-          <p>© 2025 private salon Niino All rights reserved.</p>
+          <p>© {new Date().getFullYear()} private salon Niino All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">
               プライバシーポリシー
